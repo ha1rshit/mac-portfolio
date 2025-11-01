@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit | AI Product Manager | macOS Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Boot Screen -->
+    <div id="boot-screen" class="boot-screen">
+        <div class="apple-logo">
+            <i class="fab fa-apple"></i>
+        </div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <!-- Login Screen -->
+    <div id="login-screen" class="login-screen hidden">
+        <div class="login-container">
+            <div class="time">9:04 AM</div>
+            <div class="date">Saturday, October 11</div>
+            <div class="user-avatar">H</div>
+            <h2>Harshit</h2>
+            <p class="user-subtitle">AI Product Manager</p>
+            <input type="password" id="password-input" placeholder="Enter Password" autocomplete="off">
+            <button id="login-btn" class="login-btn">Login</button>
+            <p class="hint">Press Enter or click Login</p>
+        </div>
+    </div>
+
+    <!-- Desktop -->
+    <div id="desktop" class="desktop hidden">
+        <!-- Menu Bar -->
+        <div class="menu-bar">
+            <div class="menu-left">
+                <div class="apple-menu">
+                    <i class="fab fa-apple"></i>
+                </div>
+                <div class="app-name" id="active-app-name">Finder</div>
+                <div class="menu-item">File</div>
+                <div class="menu-item">Edit</div>
+                <div class="menu-item">View</div>
+                <div class="menu-item">Go</div>
+                <div class="menu-item">Window</div>
+                <div class="menu-item">Help</div>
+            </div>
+            <div class="menu-right">
+                <div class="menu-icon" id="spotlight-btn">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="menu-icon" id="control-center-btn">
+                    <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="menu-icon">
+                    <i class="fas fa-battery-three-quarters"></i>
+                    <span>69%</span>
+                </div>
+                <div class="menu-icon">
+                    <i class="fas fa-wifi"></i>
+                </div>
+                <div class="menu-icon" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="menu-time">
+                    <span id="current-time">Sat, Oct 11, 9:04 AM</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spotlight Search -->
+        <div id="spotlight" class="spotlight hidden">
+            <div class="spotlight-container">
+                <input type="text" id="spotlight-input" placeholder="Spotlight Search">
+                <div class="spotlight-results" id="spotlight-results"></div>
+            </div>
+        </div>
+
+        <!-- Control Center -->
+        <div id="control-center" class="control-center hidden">
+            <div class="control-panel">
+                <h3>Control Center</h3>
+                <div class="control-item">
+                    <label>Brightness</label>
+                    <input type="range" id="brightness-slider" min="30" max="100" value="80">
+                    <span id="brightness-value">80%</span>
+                </div>
+                <div class="control-item">
+                    <label>Volume</label>
+                    <input type="range" id="volume-slider" min="0" max="100" value="50">
+                    <span id="volume-value">50%</span>
+                </div>
+                <div class="control-toggles">
+                    <div class="toggle-item">
+                        <i class="fas fa-wifi"></i>
+                        <span>Wi-Fi</span>
+                    </div>
+                    <div class="toggle-item">
+                        <i class="fas fa-bluetooth"></i>
+                        <span>Bluetooth</span>
+                    </div>
+                    <div class="toggle-item">
+                        <i class="fas fa-plane"></i>
+                        <span>Airplane</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop Icons -->
+        <div class="desktop-icons">
+            <!-- Icons can be added here -->
+        </div>
+
+        <!-- Windows Container -->
+        <div id="windows-container" class="windows-container"></div>
+
+        <!-- Dock -->
+        <div class="dock">
+            <div class="dock-container">
+                <div class="dock-item" data-app="finder" title="Finder">
+                    <img src="public/launchpad.png" alt="Finder">
+                </div>
+                <div class="dock-item" data-app="safari" title="Safari">
+                    <img src="public/safari.png" alt="Safari">
+                </div>
+                <div class="dock-item" data-app="mail" title="Mail">
+                    <img src="public/mail.png" alt="Mail">
+                </div>
+                <div class="dock-item" data-app="notes" title="Notes">
+                    <img src="public/notes.png" alt="Notes">
+                </div>
+                <div class="dock-item" data-app="terminal" title="Terminal">
+                    <img src="public/terminal.png" alt="Terminal">
+                </div>
+                <div class="dock-item" data-app="vscode" title="VS Code">
+                    <img src="public/vscode.png" alt="VS Code">
+                </div>
+                <div class="dock-item" data-app="github" title="GitHub">
+                    <img src="public/github.png" alt="GitHub">
+                </div>
+                <div class="dock-item" data-app="linkedin" title="LinkedIn">
+                    <img src="public/linkedin.png" alt="LinkedIn">
+                </div>
+                <div class="dock-item" data-app="spotify" title="Spotify">
+                    <img src="public/spotify.png" alt="Spotify">
+                </div>
+                <div class="dock-item" data-app="youtube" title="YouTube">
+                    <img src="public/youtube.png" alt="YouTube">
+                </div>
+                <div class="dock-item" data-app="facetime" title="FaceTime">
+                    <img src="public/facetime.png" alt="FaceTime">
+                </div>
+                <div class="dock-item" data-app="weather" title="Weather">
+                    <img src="public/weather.png" alt="Weather">
+                </div>
+                <div class="dock-divider"></div>
+                <div class="dock-item" data-app="trash" title="Trash">
+                    <i class="fas fa-trash"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
